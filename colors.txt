@@ -1,0 +1,25 @@
+Colors via Coolors.co
+
+
+Contrast Shades:
+Space Cadet
+#2B2D42
+
+Anti-flash white
+#EDF2F4
+
+
+Shade #1:
+Emerald
+#68D89B
+
+Aquamarine
+#8DFFCD
+
+Aquamarine Lighter
+#BCFFDB
+
+Celadon
+#BEE6CE
+
+
