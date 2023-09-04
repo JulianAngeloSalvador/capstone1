@@ -522,21 +522,29 @@ body {
 
 /* PROJECT SEC */
 .project-content {
-  display: grid;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
   height: 100%;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-card {
   border-radius: var(--button-rad);
-  border: var(--guideline1);
-  aspect-ratio: 1/1;
+  background-color: var(--primary);
+  width: clamp(300px, 500px, 80%);
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #151515, #121212);
+  box-shadow: 5px 5px 5px #080808, -5px -5px 5px #202020;
 }
 
 .proj-title {
   color: var(--secondary);
-  font-size: var(--fs-lead);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 800;
   text-align: center;
   padding: 20px;
 }
