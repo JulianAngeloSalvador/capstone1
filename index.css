@@ -573,7 +573,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 1em;
+  padding: 1em 1.5;
   background-color: var(--secondary);
   border-radius: calc(var(--button-rad) * 3);
 }
