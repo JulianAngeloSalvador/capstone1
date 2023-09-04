@@ -548,6 +548,50 @@ body {
   text-align: center;
   padding: 20px;
 }
+
+/* TOOLS SEC */
+#tools .row {
+  gap: 1em 0;
+  padding: 1em;
+}
+
+.tools-cols {
+  border-radius: 11px;
+  background: linear-gradient(145deg, #151515, #121212);
+  box-shadow: 13px 13px 26px #0f0f0f, -13px -13px 26px #191919;
+}
+
+.tools-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+  background-color: var(--secondary);
+  border-radius: calc(var(--button-rad) * 3);
+}
+
+.tools-header {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.tools-image-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 1em;
+}
+.tools-wrapper img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 11px;
+  background: linear-gradient(145deg, #e3e1e1, #ffffff);
+  box-shadow: 5px 5px 3px #bdbcbc, -5px -5px 3px #ffffff;
+}
+
 /* CONTACT SEC */
 
 .contact-sec {
