@@ -681,16 +681,20 @@ input {
 footer {
   color: var(--secondary);
   padding: 1em;
+  padding-top: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 80px 80px 0 0;
+  background: linear-gradient(145deg, #151515, #121212);
+  box-shadow: 5px 5px 10px #080808, -5px -5px 10px #202020;
 }
 .footer-header {
   font-size: clamp(1.5rem, 1.75vw, 1.75rem);
 }
 
 .copyright-wrapper p {
-  font-size: clamp(0.85rem, 1.25vw, 1.25rem);
+  font-size: clamp(0.85rem, 0.95vw, 0.95rem);
 }
 /* Mobile */
 @media screen and (max-width: 575px) {
