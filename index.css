@@ -54,6 +54,32 @@
     translate: 0 -5px;
   }
 }
+@keyframes pop {
+  0%,
+  100% {
+  }
+  50% {
+    transform: translate(0, -20%);
+  }
+}
+
+@keyframes pop-a-little {
+  0%,
+  100% {
+  }
+  50% {
+    transform: translate(0, -10%);
+  }
+}
+
+@keyframes pop-a-little-px {
+  0%,
+  100% {
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+}
 
 /* Hide the scrollbar track */
 ::-webkit-scrollbar {
@@ -555,12 +581,31 @@ textarea {
   z-index: 20;
   opacity: 1;
   color: var(--faded-dark);
+  transition: var(--fast-transition);
 }
 fieldset,
 textarea,
 input {
   outline: none;
   border: none;
+}
+fieldset {
+  overflow: hidden;
+}
+fieldset input:focus + .labelAlternative {
+  translate: -100% 0px;
+  background-color: var(--form-sec-bg);
+  color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 .form-buttons-container {
@@ -578,6 +623,10 @@ input {
   cursor: pointer;
   transition: var(--fast-transition);
   color: var(--secondary);
+}
+
+.label-levitate {
+  opacity: 0;
 }
 
 /* Footer */
