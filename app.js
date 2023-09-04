@@ -30,6 +30,7 @@ readMore.addEventListener("click", () => {
 const fullName = document.querySelector("#fullName");
 const email = document.querySelector("#email");
 const contactNo = document.querySelector("#contactNum");
+const formSubmit = document.querySelector("#submitBtn");
 
 //clear fields upon refresh of page
 window.onload = function () {
@@ -39,22 +40,3 @@ window.onload = function () {
     inputFields[i].value = "";
   }
 };
-
-inputFields.forEach(function (input) {
-  input.required = true;
-  input.setAttribute("autocomplete", "off");
-
-  input.addEventListener("input", function (event) {
-    // const popover = input.parentElement.querySelector(".error-popover");
-    const inputLabel = input.nextElementSibling;
-    if (input.validity.typeMismatch) {
-      // popover.style.display = "flex";
-      inputLabel.classList.add("label-levitate");
-      formSubmit.disabled = true;
-    } else {
-      popover.style.display = "none";
-      inputLabel.classList.remove("label-levitate");
-      formSubmit.disabled = false;
-    }
-  });
-});

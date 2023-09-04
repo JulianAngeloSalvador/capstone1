@@ -520,6 +520,26 @@ body {
   height: auto;
 }
 
+/* PROJECT SEC */
+.project-content {
+  display: grid;
+  height: 100%;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.project-card {
+  border-radius: var(--button-rad);
+  border: var(--guideline1);
+  aspect-ratio: 1/1;
+}
+
+.proj-title {
+  color: var(--secondary);
+  font-size: var(--fs-lead);
+  text-align: center;
+  padding: 20px;
+}
 /* CONTACT SEC */
 
 .contact-sec {
@@ -570,42 +590,12 @@ textarea {
   padding: 15px;
   border-radius: var(--button-rad);
 }
-.labelAlternative {
-  position: absolute;
-  pointer-events: none;
-  padding-left: 15px;
-  left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  overflow: visible;
-  z-index: 20;
-  opacity: 1;
-  color: var(--faded-dark);
-  transition: var(--fast-transition);
-}
+
 fieldset,
 textarea,
 input {
   outline: none;
   border: none;
-}
-fieldset {
-  overflow: hidden;
-}
-fieldset input:focus + .labelAlternative {
-  translate: -100% 0px;
-  background-color: var(--form-sec-bg);
-  color: transparent;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
 }
 
 .form-buttons-container {
@@ -623,10 +613,6 @@ input[type="number"] {
   cursor: pointer;
   transition: var(--fast-transition);
   color: var(--secondary);
-}
-
-.label-levitate {
-  opacity: 0;
 }
 
 /* Footer */
