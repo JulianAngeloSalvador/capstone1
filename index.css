@@ -362,6 +362,9 @@ body {
 /* Landing Page */
 /* ! Landing Section */
 /* Left side */
+#landing {
+  height: 100vh;
+}
 .landing-content-container {
   height: 100%;
 }
@@ -658,6 +661,10 @@ textarea,
 input {
   outline: none;
   border: none;
+}
+
+#message {
+  resize: none;
 }
 
 .form-buttons-container {
